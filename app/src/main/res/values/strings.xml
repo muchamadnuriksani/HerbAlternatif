@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HerbAlternatif</string>
+    <string name="herbals_name">Nama Herbal</string>
+    <string name="herbals_details">Detail Herbal</string>
+    <string name="action_user">About</string>
+    <string name="detail">Detail</string>
+    <string name="isi_detail">Isi Detail</string>
+    <string name="meds">Pengobatan</string>
+    <string name="isi_meds">Isi Pengobatan</string>
+    <string name="uses">Cara penggunaan</string>
+    <string name="isi_uses">Isi Cara Penggunaan</string>
+</resources>
