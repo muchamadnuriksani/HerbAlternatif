@@ -9,6 +9,10 @@ import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
+
 class MainActivity : AppCompatActivity() {
     private lateinit var rvHerbals: RecyclerView
     private var list: ArrayList<Herbal> = arrayListOf()
@@ -16,6 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        AppCenter.start(application, "09a78c18-e75d-457f-b022-188fab9c8952",
+            Analytics::class.java, Crashes::class.java);
 
         supportActionBar!!.title = "Herbal Alternatif"
 
